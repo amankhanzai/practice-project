@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sheet</title>
+  <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    .container{
+        display: flex;
+        border: 2px solid black;
+        min-width: 300px;
+        justify-content: center;
+        justify-items: center;
+    }
+    h1{
+        background-color: black;
+        color: white;
+        height: 100px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 100px;
+        margin-bottom: 20px;
+    }
+    .subject{
+        width: 250px;
+        height: 60px;
+        margin: 10px 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .subject input{
+        padding: 10PX;
+        border: 1px solid black;
+        border-radius: 7px;
+        margin-top: 5px;
+    }
+    .button button{
+        padding: 10px;
+        color: black;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+    .table{
+        display: flex;
+        align-items: center;
+        height: 515px;
+        position: relative;
+        right: 10px;
+    }
+    .table table{
+        border-collapse: collapse;
+        width: 300px;
+    }
+    .table table tr th{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: left;
+        padding: 10px;
+    }
+    .table tr td{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+     <form>
+      <div class="h1">
+        <h1>MARK SHEET</h1>
+      </div>
+      <div class="subject-1 subject">
+        <label for="Computer">Computer</label>
+        <input type="number"id="Computer" placeholder="Enter your computer marks">   
+      </div>
+      <div class="subject-2 subject">
+        <label for="English">English</label>
+        <input type="number"id="English" placeholder="Enter your English marks">   
+      </div>
+      <div class="subject-3 subject">
+        <label for="Science">Science</label>
+        <input type="number"id="Science" placeholder="Enter your Science marks">   
+      </div>
+      <div class="subject-4 subject">
+        <label for="Math">Math</label>
+        <input type="number"id="Math" placeholder="Enter your Math marks">   
+      </div>
+      <div class="subject-5 subject">
+        <label for="Physics">Physics</label>
+        <input type="number"id="Physics" placeholder="Enter your Physics marks">   
+      </div>
+      <div class="button subject">
+        <input type="button" onclick="calcultaion()" value=" Calculate Marks">
+      </div>
+     </form>
+     <div class="table">
+        <table border>
+            <tr>
+                <th>Total Marks</th>
+                <td>500</td>
+            </tr>
+            <tr>
+                <th>Obtained Marks</th>
+                <td id="obtain"></td>
+            </tr>
+            <tr>
+                <th>Percentage</th>
+                <td id="Percentage"></td>
+            </tr>
+            <tr>
+                <th>Grade</th>
+                <td id="grade"></td>
+            </tr>
+            <tr>
+                <th>Remarks</th>
+                <td id="remarks"></td>
+            </tr>
+        </table>
+     </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

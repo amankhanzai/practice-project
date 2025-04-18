@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        body {
+            background-image: url("/pexels-morningtrain-18105.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: black;
+            text-transform: capitalize;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .dark h1, .dark h2, .dark p, .dark ul {
+            color: white;
+        }
+        .container h1 {
+            position: relative;
+            bottom: 32px;
+            margin-top: -2px;
+            font-size: 27px;
+        }
+         .container-2{
+            position: relative;
+            bottom: 378px;
+            left: -29px;
+            justify-content: center;
+            display: flex;
+            color: white;
+            font-size: 20px;
+         }
+            .container-2 ul {
+                position: relative;
+                bottom: -279px;
+                list-style-type: none;
+                margin: 22px;
+                padding: 0;
+                display: inline;
+                margin-right: 126px;
+                cursor: pointer;
+            }
+            button
+            {
+                position: relative;
+                left: 1217px;
+                top: -3px;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 46px;
+                background-color: black;
+                color: white;
+                border: none;
+            }
+    </style>
+</head>
+<body class="bd">
+    <button onclick="darkmode()">Dark Mode</button>
+    <div id="container">
+        <h1> LAPTOP</h1>
+    </div>  
+    <div id="container-2">
+            <ul>home</ul>
+            <ul>about</ul>
+            <ul>services</ul>
+            <ul>contact</ul>
+    </div>
+    <script>
+          function darkmode(){
+          let bd = document.getElementsByClassName('bd')[0];
+           bd.classList.toggle('dark');
+
+        }
+    </script>
+</body>
+</html>

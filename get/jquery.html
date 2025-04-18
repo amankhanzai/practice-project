@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #box{
+                background-color: red;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                text-align: center; 
+                padding: 20px;
+                color: white;
+                font-size: 20px;
+            }
+            </style>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div id="box">
+        <h1>practice</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deserunt.</p>
+    </div>
+    <button id="fadeinbtn">fade in</button>
+    <button id="fadeoutbtn">fade out</button>
+    <button id="fadetogglebtn">fade toggle</button>
+    <button id="fadetobtn">fade to</button>
+    <button id="slideup">slide up</button>
+    <button id="slidedown">slide down</button>
+    <button id="slidetoggle">slide toggle</button>
+    <script>
+        $(document).ready(function(){
+            $("#fadeinbtn").click(function(){
+                $("#box").fadeIn(3000,function(){
+                    alert("fade in completed");
+                });
+            });
+            $("#fadeoutbtn").click(function(){
+                $("#box").fadeOut(3000,function(){
+                    alert("fade out completed");
+                });
+            });
+            $("#fadetogglebtn").click(function(){
+                $("#box").fadeToggle(3000,function(){
+                    alert("fade toggle completed");
+                });
+            });
+            $("#fadetobtn").click(function(){
+                $("#box").fadeTo(3000,function(){
+                    alert("fade to completed");
+                });
+            });
+            
+            $("#slideup").click(function(){
+                $("#box").slideUp(3000,function(){
+                    alert("slide up completed");
+                });
+            });
+            
+            $("#slidedown").click(function(){
+                $("#box").slideDown(3000,function(){
+                    alert("slide down completed");
+                });
+            });
+            
+        });
+        </script>
+</body>
+</html>

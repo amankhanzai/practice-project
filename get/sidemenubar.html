@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .container{
+            background-color: black;
+            color: white;   
+            width: 153px;
+            height: 500px;
+            position: absolute;
+            top: 30px;
+            left: 0px;
+            display: inline-block;
+            /* transition: all 4s ease; */
+            padding: 20px;
+        }
+        ul a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+        .main-content{
+            margin-left: 0;
+            transition: margin-left 0.3s ease-in-out;
+            padding: 20px;
+        }
+         /* Main content container */
+         .main-content {
+            margin-left: 250px; /* Shift the content */
+            transition: margin-left 0.3s ease-in-out; /* Add animation */
+        }
+        .bar{
+            transition: all;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="sidemenubar()">menu bar</button>
+    <div class="container">
+        <ul><a href="">home</a></ul>
+        <ul><a href="">about</a></ul>
+        <ul><a href="">services</a></ul>
+        <ul><a href="">password</a></ul>
+        <ul><a href="">login</a></ul>
+        <ul><a href="">singin</a></ul>
+        <ul><a href="">privacy</a></ul>
+    </div>
+     <!-- Main content (this paragraph is auto-managed) -->
+     <div class="main-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, modi! Quam libero optio quasi, dolore est illum doloribus, quaerat et assumenda expedita ducimus nobis. Earum rem eaque incidunt iste reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tempore alias magnam ab non architecto cupiditate sequi, rem mollitia obcaecati debitis, quisquam, sapiente possimus dolorum nisi. Beatae, dolorum. Deleniti.</p>
+    </div>
+    <script>
+        function sidemenubar(){
+            let a = document.querySelector('.container');
+            a.classList.toggle('bar');
+            mainContent.classList.toggle('shift');
+        }
+    </script>
+</body>
+</html>

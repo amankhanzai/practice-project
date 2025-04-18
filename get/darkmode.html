@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border: 2px solid white;
+        }
+        h1{
+           padding: 20px;
+           margin: 20px;
+           position: relative;
+              left: 20px;
+              justify-content: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <button onclick="darkmode()">Dark Mode</button>
+    <div class="container">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab commodi aspernatur inventore labore cumque nihil suscipit ducimus laudantium! Perspiciatis cupiditate dolorem assumenda repudiandae adipisci, corrupti fugit delectus perferendis tempora.</p>
+        <ul><a href="https://www.youtube.com/watch?v=ipfrW9jYGwI">youtube</a></ul>
+    </div>
+    <script>
+        function darkmode(){
+           let a = document.getElementsByClassName('container')[0];
+             a.classList.toggle('dark');
+
+        }
+    </script>
+</body>
+</html>
